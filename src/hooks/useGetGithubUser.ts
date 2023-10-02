@@ -1,9 +1,7 @@
 import { Octokit } from "octokit";
 import { useState } from "react";
 
-const octokit = new Octokit({
-  auth: "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",
-});
+const octokit = new Octokit();
 
 const useGetGithubUser = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
