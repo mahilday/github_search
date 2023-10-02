@@ -28,7 +28,10 @@ const Search = ({
           placeholder="Search Github Username"
         />
         <div className="absolute right-5">
-          <Button onClick={handleGetUser}>Search</Button>
+          <span className="text-red-500">{user.length === 0 ? "No results" : ""}</span>
+          <Button onClick={handleGetUser}>
+            {isLoading ? "Loading ..." : "Search"}
+          </Button>
         </div>
       </section>
     </div>

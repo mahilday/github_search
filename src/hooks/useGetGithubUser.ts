@@ -17,7 +17,6 @@ const useGetGithubUser = () => {
           "X-GitHub-Api-Version": "2022-11-28",
         },
       });
-      console.log(data);
       setUser(data.data);
     } catch (err) {
       console.log(err);

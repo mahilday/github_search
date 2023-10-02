@@ -1,9 +1,7 @@
 import { LinkIcon, MapPinIcon } from "@heroicons/react/20/solid";
 import moment from "moment";
-import React from "react";
 
 const UserCard = ({ userDetails }: { userDetails: any }) => {
-  console.log(userDetails);
   const getFormattedDate = () => {
     const date = moment(userDetails?.created_at).format("DD MMM yyyy");
     return date;

@@ -12,7 +12,6 @@ function App() {
   const { user, getUser, isLoading } = useGetGithubUser();
 
   const handleGetUser = () => {
-    console.log(searchString)
     getUser(searchString);
   };
 
